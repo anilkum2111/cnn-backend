@@ -3,7 +3,14 @@ from flask_cors import CORS
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
+import os
+import gdown
 
+MODEL_PATH = "best_resnet50_breakhis.keras"
+
+if not os.path.exists(MODEL_PATH):
+    url = "https://drive.google.com/uc?id=14PsTcC8_gP_h2jBBFlZF4CAucJUZAqXW "
+    gdown.download(url, MODEL_PATH, quiet=False)
 app = Flask(__name__)
 CORS(app)
 
