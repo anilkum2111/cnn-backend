@@ -2,3 +2,4 @@ flask
 tensorflow
 gdown
 gunicorn
+flask-cors
