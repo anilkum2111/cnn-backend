@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffe0ec, #fff5f9);
+}
+
+/* LOGIN */
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login div {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login input {
+  margin: 10px;
+  padding: 12px;
+  width: 220px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.login button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #ff4d88, #ff85a2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login button:hover {
+  transform: scale(1.05);
+}
+
+/* MAIN */
+.app {
+  padding: 30px;
+  text-align: center;
+}
+
+.app h1 {
+  color: #ff4d88;
+  margin-bottom: 20px;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* PANEL */
+.panel {
+  width: 340px;
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.panel img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #ff4d88, #ff85a2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* RESULT CARD */
+.result-card {
+  padding: 20px;
+}
+
+.green {
+  color: #28a745;
+}
+
+.red {
+  color: #dc3545;
+}
+
+/* LOADER */
+.loader {
+  border: 6px solid #eee;
+  border-top: 6px solid #ff4d88;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* HEATMAP */
+.heatmap {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* AI BOX */
+.ai-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(255, 77, 136, 0.1);
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
