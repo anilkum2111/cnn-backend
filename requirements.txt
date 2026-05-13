@@ -1,5 +1,7 @@
-flask
+fastapi
+uvicorn
 tensorflow
+pillow
+numpy
 gdown
-gunicorn
-flask-cors
+python-multipart
